@@ -1,30 +1,65 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Paleta base (modo claro, por si algún usuario cambia) */
+  --ifm-color-primary: #c9963e;
+  --ifm-color-primary-dark: #b6853a;
+  --ifm-color-primary-darker: #a97c37;
+  --ifm-color-primary-darkest: #8b6529;
+  --ifm-color-primary-light: #d7a64b;
+  --ifm-color-primary-lighter: #dcae57;
+  --ifm-color-primary-lightest: #e5c07d;
+
+  --ifm-font-family-base: 'Poppins', sans-serif;
+  --ifm-font-family-monospace: 'Space Grotesk', monospace;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(201, 150, 62, 0.15);
+
+  /* Tus tokens propios, reutilizables en cualquier CSS module */
+  --cqrs-dark: #15130f;
+  --cqrs-dark-2: #201d17;
+  --cqrs-gold: #c9963e;
+  --cqrs-gold-hover: #d7a64b;
+  --cqrs-card: #f7f3ec;
+  --cqrs-muted: #8c8577;
+  --cqrs-success: #36c275;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Modo oscuro = tu tema real */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #c9963e;
+  --ifm-color-primary-dark: #b6853a;
+  --ifm-color-primary-darker: #a97c37;
+  --ifm-color-primary-darkest: #8b6529;
+  --ifm-color-primary-light: #d7a64b;
+  --ifm-color-primary-lighter: #dcae57;
+  --ifm-color-primary-lightest: #e5c07d;
+
+  --ifm-background-color: #15130f;
+  --ifm-background-surface-color: #201d17;
+  --ifm-navbar-background-color: #15130f;
+  --ifm-footer-background-color: #201d17;
+
+  --ifm-font-color-base: #f7f3ec;
+  --ifm-color-content-secondary: #8c8577;
+
+  --docusaurus-highlighted-code-line-bg: rgba(201, 150, 62, 0.15);
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Reutiliza tus utilidades visuales si quieres darle identidad a las páginas de docs */
+.corner-cut {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+
+.bg-blueprint {
+  background-image:
+    linear-gradient(to right, rgba(201, 150, 62, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(201, 150, 62, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
