@@ -3,7 +3,7 @@ const config = {
   tagline: 'Documentación técnica',
   favicon: 'img/favicon.ico',
 
-  url: 'https://infraestructure-and-docs.web.app',
+  url: 'https://docs.cqrs.andrescortes.dev',
   baseUrl: '/',
 
   organizationName: 'HecRodCode',
