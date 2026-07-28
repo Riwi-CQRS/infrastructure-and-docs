@@ -54,7 +54,7 @@ const config = {
       },
       items: [
         {
-          to: '/docs',
+          to: '/docs/arquitectura',
           label: 'Docs',
           position: 'left',
         },

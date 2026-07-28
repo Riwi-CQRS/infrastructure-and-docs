@@ -1,22 +1,19 @@
-# Website
+# CQRS Engine Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Documentación técnica del proyecto CQRS Engine, publicada con Docusaurus v3.
 
-## Installation
+## Secciones principales
+
+- Arquitectura
+- Equipo
+- QA
+
+## Desarrollo local
 
 ```bash
 npm install
-```
-
-**Note**: feel free to use the package manager of your choice.
-
-## Local Development
-
-```bash
 npm run start
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Build
 
@@ -24,20 +21,6 @@ This command starts a local development server and opens up a browser window. Mo
 npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Deploy
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true npm run deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+El sitio se despliega con GitHub Actions hacia Firebase Hosting.
