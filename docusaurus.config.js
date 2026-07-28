@@ -54,16 +54,20 @@ const config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
+          to: '/docs',
           label: 'Docs',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/Riwi-CQRS/cqrs-qa',
+          label: 'QA Repo',
+          position: 'right',
         },
       ],
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} CQRS Engine.`,
+      copyright: `© ${new Date().getFullYear()} CQRS Engine — Proyecto académico`,
     },
     prism: {
       theme: require('prism-react-renderer').themes.dracula,
